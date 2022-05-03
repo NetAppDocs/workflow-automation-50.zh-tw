@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>workflow-automation-50 | NetApp Documentation</title>
+    <atom:link href="https://docs.netapp.com/zh-tw/workflow-automation-50/feed.xml" rel="self" type="application/rss+xml"/>
+    <link>https://docs.netapp.com/zh-tw/workflow-automation-50</link>
+    <description>The latest updates from NetApp Documentation</description>
+    <language>zh-tw</language>
+    <ttl>60</ttl>
+    <pubDate>Tue, 03 May 2022 11:53:50 +0000</pubDate>
+    <lastBuildDate>Tue, 03 May 2022 11:53:50 +0000</lastBuildDate>
+    
+  </channel>
+</rss>
