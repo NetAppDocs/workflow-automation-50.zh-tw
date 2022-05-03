@@ -1,0 +1,16 @@
+---
+layout: astra 
+sidebar: sidebar 
+permalink: index.html 
+lead: Welcome to the OnCommand Workflow Automation 5.0 Information Library. 
+summary: 適用於以下項目的文件OnCommand Workflow Automation ：WFA文件、5.0.1 
+---
+= 資訊文件OnCommand Workflow Automation
+:hardbreaks:
+:allow-uri-read: 
+:nofooter: 
+:icons: font
+:linkattrs: 
+:imagesdir: ./media/
+
+

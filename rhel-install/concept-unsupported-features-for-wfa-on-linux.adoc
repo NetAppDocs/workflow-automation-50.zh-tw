@@ -1,0 +1,36 @@
+---
+permalink: rhel-install/concept-unsupported-features-for-wfa-on-linux.html 
+sidebar: sidebar 
+keywords: oncommand workflow automation, known, limitations 
+summary: 安裝及設定WFA之前、應先注意某些限制和不受支援的功能。OnCommand Workflow Automation 
+---
+= 已知的侷限性OnCommand Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+安裝及設定WFA之前、應先注意某些限制和不受支援的功能。OnCommand Workflow Automation
+
+* LDAP驗證*
+
+* 您只能使用Microsoft Active Directory輕量型目錄存取傳輸協定（LDAP）伺服器進行LDAP驗證。
+* 您不得使用屬於多個網域階層結構的LDAP使用者名稱進行驗證或通知。
+
+
+[NOTE]
+====
+不支援Microsoft Active Directory輕量型目錄服務（AD LDS）。
+
+====
+* WFA資料來源類型*
+
+WFA 4.1版本中不支援使用支援的資料來源類型包括Data Center Manager 6.0、6.1和6.2、未來版本將不支援這些資料來源類型。Active IQ
+
+*安裝在Linux上的WFA
+
+* 目前無法取得以7-Mode運作的來自VMware的認證內容Data ONTAP 。
+* 僅包含PowerShell程式碼的命令與Linux不相容。
+* 7-Mode和VMware的認證命令目前並未移轉至Perl、因此與Linux不相容。
+

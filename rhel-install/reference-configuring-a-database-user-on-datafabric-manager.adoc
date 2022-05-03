@@ -1,0 +1,14 @@
+---
+permalink: rhel-install/reference-configuring-a-database-user-on-datafabric-manager.html 
+sidebar: sidebar 
+keywords: configure, database, user, active iq, data center manager 
+summary: 您必須在Active IQ 6.0之前的版本中建立資料庫使用者、才能將Active IQ 唯讀存取功能設定為OnCommand Workflow Automation 僅供參考。 
+---
+= 在Active IQ NetApp Data Center Manager上設定資料庫使用者
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您必須在Active IQ 6.0之前的版本中建立資料庫使用者、才能將Active IQ 唯讀存取功能設定為OnCommand Workflow Automation 僅供參考。

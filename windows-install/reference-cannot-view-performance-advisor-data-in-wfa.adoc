@@ -1,0 +1,22 @@
+---
+permalink: windows-install/reference-cannot-view-performance-advisor-data-in-wfa.html 
+sidebar: sidebar 
+keywords: cannot view, performance, advisor, data, wfa 
+summary: 如果您無法在WFA中檢視Performance Advisor資料、或是Performance Advisor資料來源的資料擷取程序失敗、您應該執行某些動作來疑難排解問題。 
+---
+= 無法在WFA中檢視Performance Advisor資料
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+如果您無法在WFA中檢視Performance Advisor資料、或是Performance Advisor資料來源的資料擷取程序失敗、您應該執行某些動作來疑難排解問題。
+
+* 在Active IQ WFA中將Performance Advisor設定為資料來源時、請確定您已指定具有GlobalRead最低角色的RealData Center Manager使用者認證。
+* 在WFA中將Performance Advisor設定為資料來源時、請確定您已指定正確的連接埠。
++
+根據預設、Active IQ 使用連接埠8088進行HTTP連線、而連接埠8488用於HTTPS連線。
+
+* 確保Active IQ 由VMware Data Center Manager伺服器收集效能資料。
+

@@ -1,0 +1,21 @@
+---
+permalink: rhel-install/task-create-a-support-case-for-wfa.html 
+sidebar: sidebar 
+keywords: create, support, case, oncommand workflow automation 
+summary: 您可以針對OnCommand Workflow Automation 需要技術支援協助的問題建立支援案例。您必須使用技術分類範本來建立支援案例。 
+---
+= 建立OnCommand Workflow Automation 支援案例以供使用
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以針對OnCommand Workflow Automation 需要技術支援協助的問題建立支援案例。您必須使用技術分類範本來建立支援案例。
+
+WFA的技術分類範本提供建立支援案例所需的所有資訊。您必須使用技術分級範本中的問題和資訊來建構問題、以協助改善解決問題所需的時間。
+
+.步驟
+. 存取WFA技術分類範本。
+. 請使用範本建構案例、並將案例傳送給技術支援部門。
+

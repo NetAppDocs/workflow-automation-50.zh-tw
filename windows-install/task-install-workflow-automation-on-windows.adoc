@@ -1,0 +1,190 @@
+---
+permalink: windows-install/task-install-workflow-automation-on-windows.html 
+sidebar: sidebar 
+keywords: oncommand workflow automation, install, windows 
+summary: 您可以安裝OnCommand Workflow Automation 功能區（WFA）來建立及自訂儲存工作流程、以自動化在環境中執行的儲存工作。 
+---
+= 在OnCommand Workflow Automation Windows上安裝
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+您可以安裝OnCommand Workflow Automation 功能區（WFA）來建立及自訂儲存工作流程、以自動化在環境中執行的儲存工作。
+
+.您需要的是 #8217 ；需要的是什麼
+* 您必須已檢閱安裝先決條件。
++
+xref:reference-prerequisites-for-installing-workflow-automation.adoc[安裝Workflow Automation的先決條件]
+
+* 如果您要在先前安裝WFA並解除安裝的系統上安裝WFA、則必須確保該系統上沒有WFA服務。
+* 您必須從NetApp支援網站下載WFA安裝程式。
+* 您必須停用Java的「自動升級」功能。
+
+
+.關於這項工作
+* 如果您要在虛擬機器（VM）上安裝WFA、則VM名稱不得包含底線（_）字元。
+* ActiveState ActivePerl是在安裝WFA之前安裝的。
++
+此安裝不會影響您在WFA伺服器上安裝的任何其他ActivePerl執行個體。
+
+* 在重新安裝WFA 4.2或更新版本之前、如果您已解除安裝MySQL、則必須刪除MySQL資料目錄。
+* 如果您自己安裝MySQL、WFA會將MySQL的「最佳檔案權限」和「SQL模式」屬性設為「my.ini`」。
+
+
+.步驟
+. 使用具有管理權限的帳戶登入Windows。
+. 開啟Windows檔案總管、然後瀏覽至安裝檔案所在的目錄。
+. 安裝WFA：
++
+** 互動式安裝
++
+... 以管理使用者的身分按一下滑鼠右鍵並執行WFA安裝程式執行檔（`.exe）。
+... 單擊 * 下一步 * 。
+... 輸入預設管理使用者的認證資料、然後按一下*「下一步*」。
++
+預設的管理密碼必須符合下列條件：
+
++
+**** 至少六個字元
+**** 一個大寫字元
+**** 一個小寫字元
+**** 一個數字
+**** 一個特殊字元*附註：*您必須記下管理使用者的認證資料。
+
+
+... 選取WFA組態的連接埠、然後按一下「*下一步*」。
+... 輸入網站名稱和公司名稱、然後按「*下一步*」。
++
+網站名稱可包含WFA安裝位置、例如、PA匹茲堡。
+
+... 如果您要變更預設安裝位置、請選取您要安裝WFA的位置、然後按一下*「下一步*」。
+... 如果您不想變更WFA資料庫的預設位置、請按一下「*下一步*」。
+... 按一下「*安裝*」繼續安裝。
+... 按一下「*完成*」以完成安裝。
+... 選擇下列其中一項動作、確認WFA已成功安裝：
++
+**** 透過網頁瀏覽器存取WFA。
+**** 使用Windows服務主控台驗證NetApp WFA伺服器服務和NetApp WFA資料庫服務是否正在執行。
+
+
+
+
+** 無聲安裝（從命令提示字元）：+「WFA-version_number-build_number.exe /s /v"wfa_admin_username=wfa_usernamewfa_admin_password=password wfa_admin_confirm_password=confirm管理密碼/ wfa_mySQL_pass=password confirm_wfa_sq_install=confirmMySQL密碼wfa_site_sport=s=site wfa_opa=wfa_competopport=wfa_opa=wport_compa=wfa
++
+* 範例 *
+
++
+WFA-x64-v4.2.0.0.0-B2973881.exe /s /v"wfa_admin_username=admin wfa_admin_password=Company * 234 wfa_admin_confirm_password=Company * 234 wfa_MySQL _pass=MySQL* 234 wfa_install_sit=NB wfa_install_Organization=NetApp wfa_https_port=admin_username=admin wfa_admin_admin_admin_password=compa=compa=compa=compa=compa=compa\datap\datap_scalscalscalscalscalscal_scal_scalfa\datap_scalfa /fa /datap\datap_scalscalscrap_scalscalscalscalscal_sc_scalfa /目錄下
+
++
+
+NOTE: WFA不支援「/qn」選項。
+
++
+命令參數如下：
+
++
+[cols="2*"]
+|===
+| 參數 | 說明 
+
+
+ a| 
+_WFA管理使用者名稱_
+ a| 
+管理使用者名稱
+
+選用參數。如果您未指定值、則會使用預設值admin。
+
+
+
+ a| 
+_WFA管理密碼_
+ a| 
+管理使用者密碼
+
+必要參數。預設的管理密碼必須符合下列條件：
+
+*** 至少六個字元
+*** 一個大寫字元
+*** 一個小寫字元
+*** 一個數字
+*** 一個特殊字元
+
+
+
+
+ a| 
+_WFA_admin_confirm_password_
+ a| 
+管理使用者密碼
+
+必要參數
+
+
+
+ a| 
+_WFA_MySQL_pass_
+ a| 
+MySQL使用者密碼
+
+必要參數
+
+
+
+ a| 
+_confirm_WFA_MySQL_pass_
+ a| 
+MySQL使用者密碼
+
+必要參數
+
+
+
+ a| 
+_WFA安裝站台_
+ a| 
+安裝WFA的組織單位必要參數
+
+
+
+ a| 
+_WFA_install_Organization_
+ a| 
+安裝WFA的組織或公司名稱
+
+必要參數
+
+
+
+ a| 
+_WFA_HTTP連接埠_
+ a| 
+HTTP連接埠選用參數。如果您未指定值、則會使用預設值80。
+
+
+
+ a| 
+_WFA_HTTPS連接埠_
+ a| 
+HTTPS連接埠選用參數。如果您未指定值、則會使用預設值443。
+
+
+
+ a| 
+_INSTALLDIR_
+ a| 
+安裝目錄路徑
+
+選用參數。如果未指定值、則會使用預設路徑「C:\Program Files\NetApp\WFA」。
+
+|===
+
+
+
+
+*相關資訊*
+
+http://mysupport.netapp.com["NetApp支援"]

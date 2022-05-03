@@ -1,0 +1,134 @@
+---
+permalink: windows-install/task-configure-wfa-with-mscs-using-configuration-scripts.html 
+sidebar: sidebar 
+keywords: configure, workflow, automation, mscs 
+summary: 在Microsoft叢集伺服器（MSCS）中安裝Workflow Automation（WFA）之後、您必須使用組態指令碼、在MSCS中設定WFA的高可用度。 
+---
+= 使用MSCS設定Workflow Automation
+:allow-uri-read: 
+:icons: font
+:imagesdir: ../media/
+
+
+[role="lead"]
+在Microsoft叢集伺服器（MSCS）中安裝Workflow Automation（WFA）之後、您必須使用組態指令碼、在MSCS中設定WFA的高可用度。
+
+您必須已建立WFA的備份。
+
+.步驟
+. 登入至MSCS叢集的第一個節點、然後執行下列步驟：
++
+[cols="2*"]
+|===
+| 適用於... | 執行此動作... 
+
+
+ a| 
+Windows 2012
+ a| 
+.. 在容錯移轉叢集管理員中、於*服務角色*上按一下滑鼠右鍵。
+.. 選取*建立空白服務角色*、然後將角色重新命名為「'WFA」。
+.. 將IP位址資源新增至新建立的「WFA」角色：
++
+... 在容錯移轉叢集管理員中、以滑鼠右鍵按一下新建立的「WFA」角色。
+... 選擇*資源*>*更多資源*>* IP位址*。
+... 設定叢集IP位址。
+
+
+
+
+
+
+ a| 
+Windows 2008
+ a| 
+.. 在容錯移轉叢集管理程式中、於*服務與應用程式*上按一下滑鼠右鍵。
+.. 按一下*更多動作*>*建立空白服務或應用程式*、然後將服務重新命名為「'WFA」。
+.. 將IP位址資源新增至新建立的「WFA」服務：
++
+... 在容錯移轉叢集管理程式中、以滑鼠右鍵按一下新建立的「WFA」服務。
+... 選擇*新增資源*>*更多資源*>*新增IP位址*。
+... 設定叢集IP位址。
+
+
+
+
+|===
+. 在命令提示字元下、執行「ha_setup.pl」指令碼、將WFA資料移至共享位置、並使用支援故障移轉的MSCS設定WFA：「perl ha_setup.pl - first [-t type__of_cluster _vcs][-g cluster _group名稱][-I ip_address_resource_name][-n cluster名稱][-k shared_disk [_path]
++
+指令碼位於「WFA_install_LOUSE\WFA\bin\ha\」
+
++
+* 範例 *
+
++
+「perl ha_setup.pl - first -t pSCs- g wfa -i "叢集IP位址"-n wfa_cluster -k "叢集磁碟2 "-f E：\」
+
+. 驗證是否已建立MSCS資源。
+. 從容錯移轉叢集管理程式停止WFA服務：
++
+|===
+
+
+| 適用於... | 執行此動作... 
+
+
+ a| 
+Windows 2012
+ a| 
+.. 選取*服務角色*、然後選取新建立的「WFA」角色。
+.. 在「資源」窗格中、以滑鼠右鍵按一下「* NA_WFA_DB*」、然後選取「*離線*」。
+.. 在「資源」窗格中、以滑鼠右鍵按一下「* NA_WFA_SRV*」、然後選取「*離線*」。
+
+
+
+
+ a| 
+Windows 2008
+ a| 
+.. 選取*服務與應用程式*、然後選取新建立的「WFA」服務。
+.. 在「其他資源」窗格中、以滑鼠右鍵按一下「* NA_WFA_DB*」、然後選取「*將此資源離線*」。
+.. 在「其他資源」窗格中、以滑鼠右鍵按一下「* NA_WFA_SRV*」、然後選取「*將此資源離線*」。
+
+
+|===
++
+WFA資料庫服務和WFA伺服器服務必須離線。不得從Windows服務停止WFA服務。
+
+. 手動將WFA資源移至次要節點。
+. 驗證共享磁碟是否可從第二個節點存取。
+. 在命令提示字元下、在叢集的次要節點上執行「ha_setup.pl」指令碼、以設定WFA使用來自共享位置的資料：「perl ha_setup.pl - join（-t type__of_cluster _mSCs][-f shared_drive_path]」
++
+「ha_setup.pl」指令碼可在「wfa_install_location \wfa\bin\ha\」取得
+
++
+* 範例 *
+
++
+「perl ha_setup.pl - join -t sSCs- f E：\」
+
+. 從容錯移轉叢集管理程式、將WFA資源上線：
++
+[cols="2*"]
+|===
+| 適用於... | 執行此動作... 
+
+
+ a| 
+Windows 2012
+ a| 
+.. 在新建立的「'WFA」角色上按一下滑鼠右鍵、然後選取*「Start role」（開始角色）*。角色必須處於執行中狀態、且個別資源必須處於「線上」狀態。
+
+
+
+
+ a| 
+Windows 2008
+ a| 
+.. 在新建立的「'WFA」服務上按一下滑鼠右鍵、然後選取*將此服務或應用程式上線*。服務必須處於「執行中」狀態、且個別資源必須處於「線上」狀態。
+
+
+|===
+. 手動切換至MSCS叢集的第二個節點。
+. 確認WFA服務已在叢集的第二個節點上正確啟動。
+
