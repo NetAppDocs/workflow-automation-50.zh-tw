@@ -13,6 +13,7 @@ summary: 您可以OnCommand Workflow Automation 使用單一命令、從Red Hat 
 [role="lead"]
 您可以OnCommand Workflow Automation 使用單一命令、從Red Hat Enterprise Linux機器上解除安裝物件（WFA）。
 
+.您需要的產品
 您必須擁有root使用者存取權、才能存取想要解除安裝WFA的Red Hat Enterprise Linux機器。
 
 .步驟

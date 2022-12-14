@@ -13,11 +13,12 @@ summary: 根據預設、OnCommand Workflow Automation 只有在WFA主機系統�
 [role="lead"]
 根據預設、OnCommand Workflow Automation 只有在WFA主機系統上執行的用戶端才能存取更新（WFA）資料庫。如果您想要從遠端系統存取WFA資料庫、可以變更預設設定。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須以root使用者身分登入WFA主機系統。
 * 如果WFA主機系統上安裝了防火牆、您必須設定防火牆設定、才能從遠端系統存取MySQL連接埠（3306）。
 
 
+.關於這項工作
 此程序使用預設的WFA安裝路徑。如果您在安裝期間變更預設位置、則必須使用變更的WFA安裝路徑。
 
 .步驟

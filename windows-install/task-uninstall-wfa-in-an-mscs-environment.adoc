@@ -13,6 +13,7 @@ summary: 您可以從叢集節點刪除所有WFA服務、從叢集解除安裝Wo
 [role="lead"]
 您可以從叢集節點刪除所有WFA服務、從叢集解除安裝Workflow Automation（WFA）。
 
+.關於這項工作
 此工作適用於Windows Server 2012。
 
 .步驟

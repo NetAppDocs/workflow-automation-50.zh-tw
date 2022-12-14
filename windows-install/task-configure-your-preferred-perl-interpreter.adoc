@@ -13,8 +13,10 @@ summary: 根據預設、ActivePerl會隨OnCommand Workflow Automation 功能性�
 [role="lead"]
 根據預設、ActivePerl會隨OnCommand Workflow Automation 功能性（WFA）一起安裝。如果您想要使用另一個Perl發佈版本、可以設定偏好的Perl發佈來搭配WFA使用。
 
+.您需要的產品
 您必須在WFA伺服器上安裝所需的Perl發佈版本。
 
+.關於這項工作
 您不得解除安裝或覆寫預設的ActivePerl安裝。您必須在不同的位置安裝偏好的Perl發佈版本。
 
 .步驟

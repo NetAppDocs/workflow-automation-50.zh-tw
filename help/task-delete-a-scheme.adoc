@@ -13,11 +13,12 @@ summary: 如果OnCommand Workflow Automation 不再需要、您可以刪除從WF
 [role="lead"]
 如果OnCommand Workflow Automation 不再需要、您可以刪除從WFA（WFA）建立的方案。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須已安裝WFA。
 * 您必須擁有WFA的系統管理員權限或架構認證。
 
 
+.關於這項工作
 您無法刪除預先定義的配置。
 
 .步驟

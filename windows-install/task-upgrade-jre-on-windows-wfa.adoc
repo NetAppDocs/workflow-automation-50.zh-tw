@@ -13,8 +13,10 @@ summary: 您可以在OnCommand Workflow Automation Windows伺服器上、將新�
 [role="lead"]
 您可以在OnCommand Workflow Automation Windows伺服器上、將新版的Java執行時間環境（JRE）升級為更新版（WFA）。您可以升級至較新版本的JRE,以取得Windows伺服器上安全性弱點的修正程式。
 
+.您需要的產品
 您必須在WFA伺服器上擁有Windows管理員權限。
 
+.關於這項工作
 您可以在發行系列中更新JRE版本。例如、您可以從Java 8 update 144（64位元）升級至Java 8 update 151（64位元）、但無法直接從Java 8更新至Java 9。
 
 .步驟

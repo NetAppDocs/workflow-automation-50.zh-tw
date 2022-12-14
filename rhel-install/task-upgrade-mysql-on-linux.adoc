@@ -13,11 +13,13 @@ summary: 您可以在OnCommand Workflow Automation 安裝了此功能的Linux伺
 [role="lead"]
 您可以在OnCommand Workflow Automation 安裝了此功能的Linux伺服器上升級至較新版本的MySQL、以取得安全性弱點的修正程式。
 
+.您需要的產品
 您必須擁有安裝WFA的Linux系統的root權限。
 
 
 NOTE: 重新安裝WFA 4.2之前、如果您已解除安裝MySQL、則必須刪除MySQL資料目錄。
 
+.關於這項工作
 您只能升級到MySQL 5.7的次要更新，例如5.7.1到5.7.2。您無法升級至MySQL的主要版本、例如5.8版。
 
 .步驟

@@ -13,6 +13,7 @@ summary: 您可以設定Workflow Automation（WFA）Web GUI的逾時值、而非
 [role="lead"]
 您可以設定Workflow Automation（WFA）Web GUI的逾時值、而非使用預設的逾時值180秒。
 
+.關於這項工作
 您所設定的逾時值為絕對逾時、而非與閒置相關的逾時。例如、如果您將此值設為30分鐘、則即使您在此時間結束時處於作用中狀態、30分鐘後仍會登出。您無法從WFA Web GUI設定逾時值。
 
 .步驟

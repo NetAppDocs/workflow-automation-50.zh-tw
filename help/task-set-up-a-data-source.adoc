@@ -13,7 +13,7 @@ summary: 您必須與OnCommand Workflow Automation 資料來源（WFA）建立�
 [role="lead"]
 您必須與OnCommand Workflow Automation 資料來源（WFA）建立連線、才能從資料來源取得資料。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 對於6.0之前的版本、您必須在Unified Manager伺服器上執行最新版本的ocsetup工具、才能啟用及設定遠端資料庫唯讀存取。OnCommand
 * 若為OnCommand 《統一化管理程式6.0及更新版本」、您必須在Unified Manager伺服器上建立資料庫使用者帳戶。
 +
@@ -59,6 +59,7 @@ MySQL資料庫伺服器
 
 
 
+.關於這項工作
 您可以使用此程序將多個Unified Manager伺服器資料來源新增至WFA。不過、如果您想要將Unified Manager 6.3及更新版本的伺服器與WFA配對、並使用Unified Manager伺服器中的保護功能、則不得使用此程序。
 
 如需將WFA與Unified Manager伺服器6.x配對的詳細資訊、請參閱_EWSUnified OnCommand Manager線上說明_。

@@ -518,7 +518,6 @@
   <block id="d755d061d0836d281c35fee4708ce8bc" category="admonition">「從套件移除」功能只會針對認證設為「無」的範本啟用。</block>
   <block id="bdca04f30db6cd422921c9a6bd06805c" category="summary">當必須從新的資料來源類型快取資料、或是必須由工作流程直接儲存資料至資料庫時、您必須建立配置。</block>
   <block id="f5a2df3e9e276accd3cc44a447bfaec7" category="doc">建立方案</block>
-  <block id="a711863513c11f3a6d86294acc7be0ba" category="list-title">您需要的是 #8217 ；需要的是什麼</block>
   <block id="ac32f8a1f12109db98cc71bac0330f4f" category="list-text">您必須已安裝WFA。</block>
   <block id="67d24e23ed5de79a9972d663d1512aa1" category="list-text">您必須擁有WFA的系統管理員權限或架構認證。</block>
   <block id="e3b1383094ead4ed01c2969954acba07" category="paragraph">根據預設、WFA支援兩種方案：資料來源擷取和其他。</block>
@@ -2726,7 +2725,6 @@
   <block id="4cbfde3a19f5d005cf8261b0bb430b7f" category="paragraph">父版本的修訂部分會遞增。</block>
   <block id="d7d1e94040d0db242bd0715e18936312" category="list-text">對於匯入的父實體、如果有一個子實體發生重大變更、另一個子實體發生小變更、則主要變更會套用至父實體。</block>
   <block id="f9fa8cd679701244506f03bb27d3e6bd" category="paragraph">父版本的次要部分會遞增。</block>
-  <block id="68ffa545cfbbcadb199c9d2611a48489" category="section-title">匯入子實體版本如何影響父實體版本的範例</block>
   <block id="23abdafa0b89fdf1d3f675e40785b94c" category="paragraph">請考慮WFA中的下列工作流程：「Create Volume and export Using NFS - Custom」1.1.0。</block>
   <block id="a5e5a0545f86d8ee001df235dbe1a17d" category="paragraph">工作流程中包含的現有命令如下：</block>
   <block id="7e507227bcca2d438ffdf48b933be1c1" category="list-text">「Create Export Policy - Custom' 1.0.0</block>
@@ -4870,4 +4868,6 @@
   <block id="1200ea19f48246ce118b838647e75cab" category="sidebar">管理OnCommand Workflow Automation 功能SSL認證Linux</block>
   <block id="01603a0b39ac003e0beb5f886b4b4d0a" category="sidebar">管理Perl和Perl模組Linux</block>
   <block id="bc5f3059c890d2356e892a982265bfb1" category="sidebar">疑難排解Linux的安裝與組態問題</block>
+  <block id="d59db7846bd10b6d60d21543df9faa9e" category="list-title">您需要的產品</block>
+  <block id="639ca019cb526012d0366b7ba96c7dde" category="section-title">匯入子實體版本如何影響父實體版本的範例</block>
 </blocks>

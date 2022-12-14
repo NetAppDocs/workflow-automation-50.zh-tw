@@ -13,6 +13,7 @@ summary: 某些Perl模組預設不會隨附於適用於Linux的Perl套件中。
 [role="lead"]
 某些Perl模組預設不會隨附於適用於Linux的Perl套件中。
 
+.關於這項工作
 在WFA安裝期間、WFA安裝程式會驗證系統中是否有可用的所有Perl模組、然後在符合此需求時繼續執行。您必須先安裝Perl模組、才能安裝OnCommand Workflow Automation 更新（WFA）。
 
 

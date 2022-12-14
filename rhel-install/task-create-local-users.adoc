@@ -13,8 +13,10 @@ summary: 利用NetApp（WFA）、您可以建立及管理具有各種角色特�
 [role="lead"]
 利用NetApp（WFA）、您可以建立及管理具有各種角色特定權限的本機WFA使用者、例如來賓、營運者、核准者、架構設計師、OnCommand Workflow Automation 管理與備份：
 
+.您需要的產品
 您必須安裝WFA並以管理員身分登入。
 
+.關於這項工作
 WFA可讓您為下列角色建立使用者：
 
 * *來賓*

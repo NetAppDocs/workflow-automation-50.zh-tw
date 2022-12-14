@@ -13,7 +13,7 @@ summary: 您可以還原OnCommand Workflow Automation 先前備份的還原（WF
 [role="lead"]
 您可以還原OnCommand Workflow Automation 先前備份的還原（WFA）資料庫。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 您必須已建立WFA資料庫的備份。
 * 您必須擁有管理員或架構人員認證資料。
 

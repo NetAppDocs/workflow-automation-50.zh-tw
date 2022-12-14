@@ -13,6 +13,7 @@ summary: 您可以針對OnCommand Workflow Automation 需要技術支援協助�
 [role="lead"]
 您可以針對OnCommand Workflow Automation 需要技術支援協助的問題建立支援案例。您必須使用技術分類範本來建立支援案例。
 
+.關於這項工作
 WFA的技術分類範本提供建立支援案例所需的所有資訊。您必須使用技術分級範本中的問題和資訊來建構問題、以協助改善解決問題所需的時間。
 
 .步驟

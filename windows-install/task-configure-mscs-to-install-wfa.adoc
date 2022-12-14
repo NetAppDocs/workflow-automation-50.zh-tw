@@ -13,7 +13,7 @@ summary: 在Microsoft Cluster Server（MSCS）中安裝Workflow Automation（WFA
 [role="lead"]
 在Microsoft Cluster Server（MSCS）中安裝Workflow Automation（WFA）之前、您必須先設定您的MSCS環境。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * 必須從伺服器管理程式安裝MSCS。
 * 選用：SnapDrive 必須安裝適用於Windows的功能。
 +
@@ -23,6 +23,7 @@ summary: 在Microsoft Cluster Server（MSCS）中安裝Workflow Automation（WFA
 * 兩個叢集節點都必須新增至同一個網域。
 
 
+.關於這項工作
 您必須在MSCS介面中使用叢集管理程式來完成此工作。
 
 .步驟

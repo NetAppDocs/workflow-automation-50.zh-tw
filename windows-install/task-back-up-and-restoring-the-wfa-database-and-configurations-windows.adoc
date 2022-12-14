@@ -13,8 +13,10 @@ summary: 您可以備份及還原OnCommand Workflow Automation 支援的還原�
 [role="lead"]
 您可以備份及還原OnCommand Workflow Automation 支援的還原（WFA）資料庫和組態、以便在發生災難時恢復資料。支援的組態包括資料存取、HTTP逾時和SSL憑證。
 
+.您需要的產品
 您必須擁有管理權限或架構認證。
 
+.關於這項工作
 您必須在安全的位置建立備份、因為還原備份可讓您存取WFA存取的所有儲存系統。
 
 

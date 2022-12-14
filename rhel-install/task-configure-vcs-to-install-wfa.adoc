@@ -13,7 +13,7 @@ summary: 在OnCommand Workflow Automation Veritas Cluster Server（VCS）中安�
 [role="lead"]
 在OnCommand Workflow Automation Veritas Cluster Server（VCS）中安裝支援功能（WFA）之前、您必須先確保叢集節點已正確設定為支援WFA。
 
-.您需要的是 #8217 ；需要的是什麼
+.您需要的產品
 * VCS必須依照_Veritas Cluster Server 6.1.1安裝指南_中的指示安裝在叢集的兩個節點上。
 * 若要接收有關叢集事件的通知、VCS軟體必須依照_Veritas Cluster Server Administrator指南_中的指示設定為SNMP和SMTP。
 * 所有設定叢集伺服器的需求與準則、都必須根據VCS文件予以滿足。
